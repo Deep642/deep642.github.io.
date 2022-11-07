@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyMovieApp</title>
+    <!--linking to css -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="images/png-transparent-movie-logo-movie-logo-film-tape-cinema.png"
+        type="image/x-icon">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="/swiper-bundle.min.css">
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <!-- Nav -->
+        <div class="nav container">
+            <!-- logo -->
+            <a href="index.html" class="logo">
+                My<span style="color: #ffb43a;">Movie</span>App
+            </a>
+            <!-- search-box -->
+            <div class="search-box">
+                <input id="search-input" type="search" placeholder="Search movie">
+                <i class='bx bx-search'></i>
+            </div>
+            <!--user-->
+            <a href="#" class="user">
+                <img src="/images/user.jpeg" class="user-img">
+            </a>
+            <!--NavBar-->
+            <div class="navbar">
+                <a href="#home" class="nav-link nav-active">
+                    <i class='bx bxs-home'></i>
+                    <span class="nav-link-title">Home</span>
+                </a>
+                <a href="#movies" class="nav-link">
+                    <i class='bx bxs-camera-movie'></i>
+                    <span class="nav-link-title">Movies</span>
+                </a>
+                <a href="#home" class="nav-link">
+                    <i class='bx bxs-movie-play'></i>
+                    <span class="nav-link-title">Web Series</span>
+                </a>
+                <a href="#home" class="nav-link">
+                    <i class='bx bxs-tv'></i>
+                    <span class="nav-link-title">Tv Show</span>
+                </a>
+                <a href="#podcast" class="nav-link">
+                    <i class='bx bx-podcast'></i>
+                    <span class="nav-link-title">Podcast</span>
+                </a>
+            </div>
+        </div>
+    </header>
+    <!-- home -->
+    <!-- <section class="home container" id="home">
+     <img src="/images/home-image.jpg"alt=""class="home-img">
+     <div class="home-text">
+       <h1 class="home-title">Interstellar</h1>
+       <a href="#"class="watch-btn">
+        <i class="bx bx-right-arrow"></i>
+        <span>Watch Trailer</span>
+       </a>
+     </div>
+    </section> -->
+
+
+    <section class="toprated container" id="trmovies">
+        <div>
+            <div class="heading">
+                <h2 class="heading-title">Top Rated Movies</h2>
+            </div>
+            <main id="main"></main>
+        </div>
+    </section>
+
+
+    <!-- Popular -->
+    <section class="popular container" id="popular">
+        <!-- heading  -->
+        <div class="heading">
+            <h2 class="heading-title">Popular Movies</h2>
+            <div class="swiper-btn">
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </div>
+            <!-- Swiper Buttons -->
+        </div>
+        <!-- content  -->
+        <div class="popular-content swiper">
+            <div class="swiper-wrapper">
+                <!-- movie Box 1 -->
+                <div class="swiper-slide">
+                    <div class="movie-box">
+                        <div class="box-text">
+                            <img src="/images/Interstellar-366875261-large.jpg" alt="" class="movie-box-img">
+                            <h2 class="movie-title">Interstaller</h2>
+                            <span class="movie-type">Action</span>
+                            <a href="movie1.html" class="watch-btn">
+                                <i class="bx bx-right-arrow"></i>
+                                <span>Watch Trailer</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- movie Box 2 -->
+                <div class="swiper-slide">
+                    <div class="movie-box">
+                        <div class="box-text">
+                            <img src="/images/Interstellar-366875261-large.jpg">
+                            <h2 class="movie-title">Interstaller</h2>
+                            <span class="movie-type">Action</span>
+                            <a href="#" class="watch-btn ">
+                                <i class="bx bx-right-arrow"></i>
+                                <span>Watch Trailer</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- movie Box 3 -->
+                <div class="swiper-slide">
+                    <div class="movie-box">
+                        <div class="box-text">
+                            <img src="/images/Interstellar-366875261-large.jpg">
+                            <h2 class="movie-title">Interstaller</h2>
+                            <span class="movie-type">Action</span>
+                            <a href="#" class="watch-btn ">
+                                <i class="bx bx-right-arrow"></i>
+                                <span>Watch Trailer</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- movie Box 1 -->
+                <div class="swiper-slide">
+                    <div class="movie-box">
+                        <div class="box-text">
+                            <img src="/images/Interstellar-366875261-large.jpg" alt="" class="movie-box-img">
+                            <h2 class="movie-title">Interstaller</h2>
+                            <span class="movie-type">Action</span>
+                            <a href="#" class="watch-btn">
+                                <i class="bx bx-right-arrow"></i>
+                                <span>Watch Trailer</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- movie Box 2 -->
+                <div class="swiper-slide">
+                    <div class="movie-box">
+                        <div class="box-text">
+                            <img src="/images/Interstellar-366875261-large.jpg">
+                            <h2 class="movie-title">Interstaller</h2>
+                            <span class="movie-type">Action</span>
+                            <a href="#" class="watch-btn ">
+                                <i class="bx bx-right-arrow"></i>
+                                <span>Watch Trailer</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- movie Box 2 -->
+                <div class="swiper-slide">
+                    <div class="movie-box">
+                        <div class="box-text">
+                            <img src="/images/Interstellar-366875261-large.jpg">
+                            <h2 class="movie-title">Interstaller</h2>
+                            <span class="movie-type">Action</span>
+                            <a href="#" class="watch-btn ">
+                                <i class="bx bx-right-arrow"></i>
+                                <span>Watch Trailer</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- movie Box 2 -->
+                <div class="swiper-slide">
+                    <div class="movie-box">
+                        <div class="box-text">
+                            <img src="/images/Interstellar-366875261-large.jpg">
+                            <h2 class="movie-title">Interstaller</h2>
+                            <span class="movie-type">Action</span>
+                            <a href="#" class="watch-btn ">
+                                <i class="bx bx-right-arrow"></i>
+                                <span>Watch Trailer</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- movie Box 2 -->
+                <div class="swiper-slide">
+                    <div class="movie-box">
+                        <div class="box-text">
+                            <img src="/images/Interstellar-366875261-large.jpg">
+                            <h2 class="movie-title">Interstaller</h2>
+                            <span class="movie-type">Action</span>
+                            <a href="#" class="watch-btn ">
+                                <i class="bx bx-right-arrow"></i>
+                                <span>Watch Trailer</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- movie Box 2 -->
+                <div class="swiper-slide">
+                    <div class="movie-box">
+                        <div class="box-text">
+                            <img src="/images/Interstellar-366875261-large.jpg">
+                            <h2 class="movie-title">Interstaller</h2>
+                            <span class="movie-type">Action</span>
+                            <a href="#" class="watch-btn ">
+                                <i class="bx bx-right-arrow"></i>
+                                <span>Watch Trailer</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- movie Box 3 -->
+                <div class="swiper-slide">
+                    <div class="movie-box">
+                        <div class="box-text">
+                            <img src="/images/Interstellar-366875261-large.jpg">
+                            <h2 class="movie-title">Interstaller</h2>
+                            <span class="movie-type">Action</span>
+                            <a href="#" class="watch-btn ">
+                                <i class="bx bx-right-arrow"></i>
+                                <span>Watch Trailer</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Popular -->
+    <section class="movies container" id="movies">
+        <div class="heading">
+            <h2 class="heading-title">Upcomin Movies</h2>
+        </div>
+        <div class="movies-content">
+            <!-- movie-box-1  -->
+            <div class="movie-box">
+                <img src="images/Interstellar-366875261-large.jpg" alt="" class="movie-box-img">
+                <div class="box-text">
+                    <h2 class="movie-title">Interstaller</h2>
+                    <span class="movie-type">Action/Sci-fi</span>
+                    <a href="#" class="watch-btn ">
+                        <i class="bx bx-right-arrow"></i>
+                        <span>Watch Trailer</span>
+                    </a>
+                </div>
+            </div>
+            <!-- movie-box-1  -->
+            <div class="movie-box">
+                <img src="images/Interstellar-366875261-large.jpg" alt="" class="movie-box-img">
+                <div class="box-text">
+                    <h2 class="movie-title">Interstaller</h2>
+                    <span class="movie-type">Action/Sci-fi</span>
+                    <a href="#" class="watch-btn ">
+                        <i class="bx bx-right-arrow"></i>
+                        <span>Watch Trailer</span>
+                    </a>
+                </div>
+            </div>
+            <!-- movie-box-1  -->
+            <div class="movie-box">
+                <img src="images/Interstellar-366875261-large.jpg" alt="" class="movie-box-img">
+                <div class="box-text">
+                    <h2 class="movie-title">Interstaller</h2>
+                    <span class="movie-type">Action/Sci-fi</span>
+                    <a href="#" class="watch-btnn">
+                        <i class="bx bx-right-arrow"></i>
+                        <span>Watch Trailer</span>
+                    </a>
+                </div>
+            </div>
+            <!-- movie-box-1  -->
+            <div class="movie-box">
+                <img src="images/Interstellar-366875261-large.jpg" alt="" class="movie-box-img">
+                <div class="box-text">
+                    <h2 class="movie-title">Interstaller</h2>
+                    <span class="movie-type">Action/Sci-fi</span>
+                    <a href="#" class="watch-btn ">
+                        <i class="bx bx-right-arrow"></i>
+                        <span>Watch Trailer</span>
+                    </a>
+                </div>
+            </div>
+            <!-- movie-box-1  -->
+            <div class="movie-box">
+                <img src="images/Interstellar-366875261-large.jpg" alt="" class="movie-box-img">
+                <div class="box-text">
+                    <h2 class="movie-title">Interstaller</h2>
+                    <span class="movie-type">Action/Sci-fi</span>
+                    <a href="#" class="watch-btn ">
+                        <i class="bx bx-right-arrow"></i>
+                        <span>Watch Trailer</span>
+                    </a>
+                </div>
+            </div>
+            <!-- movie-box-1  -->
+            <div class="movie-box">
+                <img src="images/Interstellar-366875261-large.jpg" alt="" class="movie-box-img">
+                <div class="box-text">
+                    <h2 class="movie-title">Interstaller</h2>
+                    <span class="movie-type">Action/Sci-fi</span>
+                    <a href="#" class="watch-btn ">
+                        <i class="bx bx-right-arrow"></i>
+                        <span>Watch Trailer</span>
+                    </a>
+                </div>
+            </div>
+            <!-- movie-box-1  -->
+            <div class="movie-box">
+                <img src="images/Interstellar-366875261-large.jpg" alt="" class="movie-box-img">
+                <div class="box-text">
+                    <h2 class="movie-title">Interstaller</h2>
+                    <span class="movie-type">Action/Sci-fi</span>
+                    <a href="#" class="watch-btn ">
+                        <i class="bx bx-right-arrow"></i>
+                        <span>Watch Trailer</span>
+                    </a>
+                </div>
+            </div>
+            <!-- movie-box-1  -->
+            <div class="movie-box">
+                <img src="images/Interstellar-366875261-large.jpg" alt="" class="movie-box-img">
+                <div class="box-text">
+                    <h2 class="movie-title">Interstaller</h2>
+                    <span class="movie-type">Action/Sci-fi</span>
+                    <a href="#" class="watch-btn ">
+                        <i class="bx bx-right-arrow"></i>
+                        <span>Watch Trailer</span>
+                    </a>
+                </div>
+            </div>
+            <!-- movie-box-1  -->
+            <div class="movie-box">
+                <img src="images/Interstellar-366875261-large.jpg" alt="" class="movie-box-img">
+                <div class="box-text">
+                    <h2 class="movie-title">Interstaller</h2>
+                    <span class="movie-type">Action/Sci-fi</span>
+                    <a href="#" class="watch-btn ">
+                        <i class="bx bx-right-arrow"></i>
+                        <span>Watch Trailer</span>
+                    </a>
+                </div>
+            </div>
+            <!-- movie-box-1  -->
+            <div class="movie-box">
+                <img src="images/Interstellar-366875261-large.jpg" alt="" class="movie-box-img">
+                <div class="box-text">
+                    <h2 class="movie-title">Interstaller</h2>
+                    <span class="movie-type">Action/Sci-fi</span>
+                    <a href="#" class="watch-btn ">
+                        <i class="bx bx-right-arrow"></i>
+                        <span>Watch Trailer</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <section>
+
+            <!-- link to api-->
+
+            <div class="next-btn">
+                <a href="#" class="next-btn">
+                    <div class="swiper-btn">
+                        <div class="swiper-button-prev"></div>
+                        <div class="button-class">
+                            <!-- <button type="button" class="btn btn-success">Next Page</button> -->
+                            Next Page
+                        </div>
+                        <div class="swiper-button-next"></div>
+                    </div>
+                </a>
+            </div>
+
+            <script src="/api.js"></script>
+            <!--link to swiper js -->
+            <script src="./swiper-bundle.min.js"></script>
+            <!--link to js -->
+            <script src="/main.js"></script>
+</body>
+
+</html>
